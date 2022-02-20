@@ -1,0 +1,332 @@
+/* css reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#preloader{
+    background: #fff url(images/Iphone-spinner-2.gif) no-repeat center center;
+    background-size:6%;
+    height:100vh;
+    width:100%;
+    position:fixed;
+    z-index: 100;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+#home{
+    background: rgba(0,0,0,0.7) url(../images/bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    clip-path:polygon(0% 0%,100% 0%,100% 90%,0% 100%);
+    min-height: 100vh;
+    overflow: hidden;
+    background-blend-mode: overlay;
+}
+/* header and logo */
+header{
+    height: 15vh;
+    width: 100%;
+    position: relative;
+    padding:5px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+header .logo{
+   font-size: 40px;
+   cursor: pointer;
+   font-family: 'Hurricane';
+   font-weight: 500;
+   color:rgb(214, 211, 211);
+}
+span{
+    color:rgb(194, 32, 100);
+    font-size:36px;
+    font-family: 'Montserrat', sans-serif;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration:none;
+    padding:12px 20px ;
+    font-size: 18px;
+    color:#000;
+    color:rgb(214, 211, 211);
+    font-family: 'Montserrat', sans-serif;
+}
+.menu ul li a:hover{
+    color:rgb(194, 32, 100);
+    /* text-decoration:underline; */
+    transition:0.8s;
+}
+/* content page styling */
+.content{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding:200px 50px;
+}
+.content h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color:#ffff;    
+}
+.change_content:after{
+    content:'';
+    animation: changetext 10s infinite linear;
+    color:rgb(194, 32, 100);
+}
+@keyframes changetext{
+   0%{content:" Graphics Designer";}
+   100%{content:"Mechanical Engineer";}
+}
+.content-part{
+    font-size: 51px;
+}
+.content p{
+    font-size: 19px;
+    color:rgb(209, 202, 202);
+}
+.btnone{
+   padding: 12px 22px;
+   font-size: 20px;
+   margin-top: 50px;
+   background-color: rgb(15, 16, 70);
+   color:#fff;
+   border:2px solid rgb(253, 252, 253);
+   border-radius:5px;
+   text-decoration: none;
+   background: transparent;
+   outline: none;
+}
+.btnone:hover{
+   background-color:rgb(133, 24, 69) ;
+   color:rgb(228, 220, 220);
+   transition:0.8s;   
+}
+/* services parts starts */
+#designs{
+    min-height: 100vh;
+    width: 100%;
+}
+#designs h1{
+    text-align:center;
+    align-items: center;
+    padding-top:20px;
+    padding-bottom:30px;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+}
+#designs p{
+    text-align: center;
+    align-items: center;
+    padding-bottom:40px;
+    font-size: 22px;
+}
+.cards{
+    display: flex;
+    padding:5px 10px;
+    flex-wrap: wrap;
+}
+.card{
+    padding:10px 12px;
+}
+.card img{
+    border-radius: 5px;
+    padding:10px 12px;
+    cursor: pointer;
+}
+.card img:hover{
+    transform: translateY(-2%);
+    transition: transform 0.5s;
+}
+/* services parts ends */
+/* tools section starts */
+#tools{
+    height:40vh;
+    width: 100%;
+    background-color: #fff;
+}
+#tools h4{
+    text-align: center;
+    align-items: center;
+    padding-top:40px;
+    font-size: 38px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.tools{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+#tools p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+}
+.tools img{
+    width: 80px;
+    height: 80px;
+    margin-right: 50px;
+}
+/* tools section ends */
+/* About us section starts */
+#About_Us{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(#fff , #000);
+    background-position: center;
+    background-size: cover;
+}
+#About_Us h1{
+    text-align: center;
+    align-items: center;
+    padding-top:120px;
+    font-size: 36px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.row{
+    display: flex;
+    width: 100%;
+    padding:100px 100px;
+    justify-content: space-between;
+}
+.col-1{
+    /* border:1px solid black; */
+    padding:60px 100px;
+    width: 55%;
+}
+.col-1 h3{
+    padding-bottom:30px;
+    font-size:24px;
+}
+.col-1 p{
+    font-size:20px;
+}
+.col-1 img{
+    border-radius: 2%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.col-2{
+    /* border:1px solid black; */
+    padding:100px 100px;
+    width: 40%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding:50px 10px;
+    background-color: rgb(32, 32, 43);
+    border-radius: 10px;
+}
+form input{
+    padding:12px 50px;
+    margin-top: 10px;
+    border:1px solid brown;
+    border-radius: 5px;
+    width: 100%;
+    text-align: start;
+    font-size: 16px;
+}
+.button_group{
+    margin-top:30px;
+    justify-content: center;
+    align-items: center;text-align: center;
+    display: flex;
+}
+.buttonone{
+    padding:8px 14px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    background-color: green;
+    color:#fff;
+}
+.buttonone:hover{
+    background-color: rgb(26, 97, 26);
+    transition:0.8s;
+}
+.buttontwo{
+    padding:8px 14px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    background-color: rgb(148, 38, 19);
+    color:#fff;
+}
+.buttontwo:hover{
+    background-color: rgb(94, 31, 18);
+    transition:0.8s;
+}
+/* About us section ends */
+/* footer section starts */
+#contact_us{
+    height: 25vh;
+    width: 100%;
+    background-color: rgb(27, 26, 26);
+    padding-top:10px;
+}
+hr{
+    border:0.8px solid rgb(53, 50, 50);
+}
+footer h4{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color:#fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.social_links{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+footer h3{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+}
+footer img{
+    margin-top: 3px;
+    width:30px;
+    height:30px;
+    margin-right: 30px;
+}
+/* footer section ends */
